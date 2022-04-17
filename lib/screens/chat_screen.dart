@@ -349,12 +349,16 @@ class _ActionBar extends StatelessWidget {
               left: 12,
               right: 24.0,
             ),
-            child: GlowingActionButton(
-              color: AppColors.accent,
-              icon: Icons.send_rounded,
-              onPressed: () {
-                print('TODO: send a message');
-              },
+            child: Container(
+              width: 40,
+              height: 40,
+              child: GlowingActionButton(
+                color: AppColors.accent,
+                icon: Icons.send_rounded,
+                onPressed: () {
+                  print('TODO: send a message');
+                },
+              ),
             ),
           ),
         ],
